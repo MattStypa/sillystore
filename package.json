@@ -1,0 +1,23 @@
+{
+  "name": "sillystore",
+  "version": "0.9.0",
+  "description": "This is just silly.",
+  "license": "MIT",
+  "author": {
+    "name": "Matt Stypa",
+    "email": "matt@mattstypa.com",
+    "url": "http://mattstypa.com"
+  },
+  "keywords": [
+    "react",
+    "store",
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MattStypa/sillystore"
+  },
+  "main": "src/main.js",
+  "dependencies": {
+    "react": "^16.4.1"
+  }
+}
