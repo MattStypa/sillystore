@@ -4,7 +4,6 @@ import Context from './Context.js';
 class Provider extends React.PureComponent {
   constructor(props) {
     super(props);
-
     this.state = {...props.store};
   }
 

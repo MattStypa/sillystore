@@ -1,6 +1,6 @@
 {
   "name": "sillystore",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "description": "Silly React Store",
   "license": "MIT",
   "main": "dist/index.js",

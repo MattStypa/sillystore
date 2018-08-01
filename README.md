@@ -4,13 +4,13 @@ This is just silly.
 
 Seriously. Don't even look at this silly React store.
 
-- No actions
-- No reducers
-- No mapping of props
+- No actions.
+- No reducers.
+- No mapping of props.
 
-Connected components have two props passed in.
-- `store`: global state object
-- `setStore`: global state setter like `setState`
+Connected components have two new props.
+- `store`: global state object.
+- `setStore`: global state setter; like `setState`.
 
 ```js
 import { Provider } from 'sillystore';
@@ -43,5 +43,9 @@ class Count extends React.Component {
   }
 }
 
-export default connect(Count);
+export default connect(Count, ['count']);
 ```
+
+## `connect(component, storeKeys);`
+- `component` - React component.
+- `storeKeys` - Array of store keys the component uses.
