@@ -3,6 +3,7 @@
   "version": "0.9.0",
   "description": "Silly React Store",
   "license": "MIT",
+  "main": "dist/index.js",
   "author": {
     "name": "Matt Stypa",
     "email": "matt@mattstypa.com",
@@ -16,8 +17,22 @@
     "type": "git",
     "url": "https://github.com/MattStypa/sillystore"
   },
-  "main": "src/main.js",
-  "dependencies": {
-    "react": "^16.4.1"
+  "scripts": {
+    "build": "webpack"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "react": "^16.0.0",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
   }
 }
