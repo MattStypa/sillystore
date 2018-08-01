@@ -31,7 +31,7 @@ ReactDOM.render(
 import { connect } from 'sillystore';
 
 class Count extends React.Component {
-  increment = () => this.props.setStore({clickCount: this.props.count + 1})
+  increment = () => this.props.setStore({count: this.props.store.count + 1})
 
   render() {
     return (
