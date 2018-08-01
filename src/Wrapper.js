@@ -41,7 +41,7 @@ class Wrapper extends React.Component {
 
   render() {
     return (
-      <this.props.component store={this.state.props} setStore={this.props.setStore} {...this.props.inherit}/>
+      <this.props.component store={this.state.props} {...this.props.inherit}/>
     );
   }
 }

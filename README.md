@@ -8,9 +8,8 @@ Seriously. Don't even look at this silly React store.
 - No reducers.
 - No mapping of props.
 
-Connected components have two new props.
+Connected components have a new prop.
 - `store`: global state object.
-- `setStore`: global state setter; like `setState`.
 
 ```js
 import { Provider } from 'sillystore';
@@ -28,10 +27,10 @@ ReactDOM.render(
 ```
 
 ```js
-import { connect } from 'sillystore';
+import { connect, setStore } from 'sillystore';
 
 class Count extends React.Component {
-  increment = () => this.props.setStore({count: this.props.store.count + 1})
+  increment = () => setStore({count: this.props.store.count + 1})
 
   render() {
     return (
