@@ -1,8 +1,11 @@
 import React from 'react';
-import Context from './Context';
+import Context from './Context.js';
+import Wrapper from './Wrapper.js'
 
-export default (Component) => (props) => (
+export default (component, watched) => (props) => (
   <Context.Consumer>
-    {state => <Component {...props} {...state}/>}
+    {context => (
+      <Wrapper component={component} inherit={props} store={context.store} setStore={context.setStore} watched={watched}/>
+    )}
   </Context.Consumer>
 );
