@@ -29,7 +29,7 @@ ReactDOM.render(
 ```js
 import { connect, setStore } from 'sillystore';
 
-class Count extends React.Component {
+class Count extends React.PureComponent {
   increment = () => setStore({count: this.props.store.count + 1})
 
   render() {
