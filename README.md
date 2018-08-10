@@ -14,7 +14,7 @@ Connected components have a new prop.
 ```js
 import { Store } from 'sillystore';
 
-const initialStore {
+const initialStore = {
   count: 0,
 };
 
