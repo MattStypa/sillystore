@@ -1,4 +1,4 @@
 import connect from './connect.js';
-import Provider, { setStore } from './Provider.js';
+import Store, { setStore } from './Provider.js';
 
-export { connect, Provider, setStore };
+export { Store, setStore, connect };

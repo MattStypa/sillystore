@@ -4,10 +4,10 @@ import Context from './Context.js';
 const setStore = (...args) => setState(...args);
 let setState = () => {};
 
-class Provider extends React.PureComponent {
+class Store extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = {...props.store};
+    this.state = {...props.initial};
     setState = (...args) => this.setState(...args);
   }
 
@@ -20,5 +20,5 @@ class Provider extends React.PureComponent {
   }
 }
 
-export default Provider;
+export default Store;
 export { setStore };

@@ -12,16 +12,16 @@ Connected components have a new prop.
 - `store`: global state object.
 
 ```js
-import { Provider } from 'sillystore';
+import { Store } from 'sillystore';
 
 const initialStore {
   count: 0,
 };
 
 ReactDOM.render(
-  <Provider store={initialStore}>
+  <Store initial={initialStore}>
     <App/>
-  </Provider>,
+  </Store>,
   document.getElementById('root')
 );
 ```
